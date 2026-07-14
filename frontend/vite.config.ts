@@ -68,6 +68,7 @@ function resolveVueOfficePptxEntry(): string {
 }
 
 export default defineConfig({
+  base: process.env.BASE_PATH || '/',
   define: {
     __FRONTEND_VERSION__: JSON.stringify(FRONTEND_VERSION),
     __FRONTEND_COMMIT__: JSON.stringify(FRONTEND_COMMIT),
